@@ -1,2 +1,2 @@
 # hasoc-hnlp
-Hate speech and offensive content detection
+Hate Speech and Offensive Content Identification in Indo-Aryan Languages

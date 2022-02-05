@@ -4,15 +4,14 @@ HASOC (2021).
 
 
 
-This repo contains the code for our solutions at the Forum for Information Retrieval Evaluation (FIRE-2021). Our team called HNLP participated in two tasks
-on binary and fine-grained classification of English tweets that contain hate, offensive, and profane content (English Subtasks A & B) and one task on identification of problematic content in Marathi (Marathi Subtask A). For English subtasks, we investigate the impact of additional corpora for hate speech detection to fine-tune transformer models. We also apply a one-vs-rest approach based on Twitter-RoBERTa to discrimination between hate, profane and offensive posts. Our models ranked third in English Subtask A with the F1-score of 81.99% and ranked second in English Subtask B with the F1-score of 65.77%. For the Marathi tasks, we propose a system based on the Language-Agnostic BERT Sentence Embedding (LaBSE). This model achieved the second result in Marathi Subtask A obtaining an F1 of 88.08%.
+This repo contains the code for our solutions at the Forum for Information Retrieval Evaluation (FIRE-2021). Our team called HNLP participated in both tasks (Subtasks A & B) for English and Hindi languages. In all languages task know as "Subtask A" refers to a classification problem of twittersamples on the basis of hate and offensive content. The second task, know as "Subtask B" refers to a classification of twitter samples on the basis of Profane Words, Hate speech, offensive Content, and Non-hate content.
 
-Colab:
-1) create a new notebook
-2) do something
-3) save
-4) File->Save a copy to GitHub
-5) append "src/" to the file name, e.g. "src/test.ipynb"
+
+We fine-tune the large language modelsto help in our task. The data is also quite unbalanced; so we used a modified cross-entropy loss to tacklethe issue. We observed that using a model which is fine-tuned in hindi corpora performs better
+
+In all languages task know as "Subtask A" refers to a classification problem of twittersamples on the basis of hate and offensive content. The second task, know as "Subtask B" refers to a classification of twitter samples on the basis of Profane Words, Hate speech, offensive Content, and Non-hate content.
+
+We achieved rank fourth, sixth with the macro F1-scores of 0.808, 0.639 in English Subtask A and English Subtask B respectively. For Hindi Subtask A, Hindi Subtask B our team achieved rank 22, 16 with the macro F1-scores of 0.737, 0.443 respectively in HASOC 2021.
 
 
 Please cite this paper if you use this method or codes:

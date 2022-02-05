@@ -16,6 +16,9 @@ We achieved rank fourth, sixth with the macro F1-scores of 0.808, 0.639 in Engli
 
 Please cite this paper if you use this method or codes:
 ```sh
-@article{
+@article{,
+  title={Multilingual Hate Speech and Offensive ContentDetection using Modified Cross-entropy Loss},
+  author={Mitra, Arka and Sankhala, Priyanshu},
+  journal={arXiv preprint arXiv:},
   year={2021}
 }
